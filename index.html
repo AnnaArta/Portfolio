@@ -179,34 +179,46 @@
 		</div>
 		<div class="foot">&copy; Дмитрий Алексеев, 2016 &ndash; 2018</div>
 	</footer>
-	<div class="popup__container popup-bg">
+
+		<div class="popup__container popup-bg">
 		<div class="popup__shape pop-up">
 			<button class="popup__close call-btn "></button>
-			<h3 class="popup__text">Форма заявки</h3>
-			<form action="" enctype="text/plain" class="form" autocomplete method="POST">
+			<form class="form" method="POST">
+				<div class="success">
+					<span>Спасибо за заявку!<br>В ближайшее время мы с вами свяжемся.</span>
+				</div>
+				<h3 class="popup__text">Форма заявки</h3>
+				<input type="hidden" name="admin_email[]" value="anna-arta00@rambler.ru">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Freecome">
+				
 				<input class="form__input" type="fio" name="fio"  required placeholder="Имя">
 				<input class="form__input" type="tel" name="tel"  required  placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 				<input class="form__button" type="submit" value="Заказать звонок" data-method="POST">
 			</form>
 		</div>
 	</div>
+
 	<div class="popup__order popup-bg">
 		<div class="popup__request pop-up">
 			<button class="popup__close form-btn"></button>
-			<h3 class="popup__text">Форма заявки</h3>
-			<!-- <form action="mail.php" enctype="multipart/form-data"  class="form"  method="POST"> -->
-			<form enctype="multipart/form-data"  class="form">
+			<form class="form">	
+				<div class="success">
+					<span>Спасибо за заявку!<br>В ближайшее время мы с вами свяжемся.</span>
+				</div>
+				<h3 class="popup__text">Форма заявки</h3>
 				<input type="hidden" name="admin_email[]" value="anna-arta00@rambler.ru">
-		        <input type="hidden" name="form_subject" value="Form Subject">
+		        <input type="hidden" name="form_subject" value="Заявка с сайта Freecome">
 
 				<input class="form__input" type="fio" name="fio"  required placeholder="Имя">
 				<input class="form__input" type="tel" name="tel"  required placeholder="Телефон">
 				<input class="form__input" type="email" name="email" required placeholder="Email" pattern="\S+@[a-z]+.[a-z]+">
-				<!-- <input class="form__button" type="submit" value="Отправить заявку" data-method="POST"> -->
-				<input class="form__button" type="submit" value="Отправить заявку">
-			</form>
+				<input class="form__button" type="submit" value="Отправить заявку" data-method="POST">
+			</form> 
+			
 		</div>
 	</div>
+
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="inputmask.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

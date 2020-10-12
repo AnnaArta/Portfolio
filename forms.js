@@ -20,26 +20,21 @@ Inputmask({
 
 
 
+$(".form").submit(function() { //Change
+  let th = $(this);
+  $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+  }).done(function() {
+      $(th).parent().find('.success').addClass('active').fadeIn();
+      setTimeout(function() {
+          $(th).find('.success').removeClass('active').fadeOut();
+          th.trigger("reset");
+      }, 2800);
+  });
+  return false;
+});
 
 
-
-	$(document).ready(function() {
-
-		$(".form").submit(function() {
-			$.ajax({
-				type: "POST",
-				url: "mail.php",
-				data: $(this).serialize()
-			}).done(function() {
-				$(this).find("input").val("");
-				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-				$(".form").trigger("reset");
-			});
-			return false;
-		});
-		
-	});
-
-
-
-							
+	  

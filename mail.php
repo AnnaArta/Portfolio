@@ -34,29 +34,23 @@ foreach ( $_POST as $key => $value ) {
 		";
 	}
 }
-$message = "<table style='width: 50%;'>$message</table>";
+$message = "<table style='width: 100%;'>$message</table>";
 
 
-// От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Your best site');
+
+$mail->setFrom('admin@' . $_SERVER['HTTP_HOST'], 'Your site ');
  
-// Кому
+
 foreach ( $admin_email as $key => $value ) {
 	$mail->addAddress($value);
 }
-// Тема письма
+
 $mail->Subject = $form_subject;
- 
-// Тело письма
+
 $body = $message;
-// $mail->isHTML(true);  это если прям верстка
+
 $mail->msgHTML($body);
 
-// Приложения
-if ($_FILES){
-	foreach ( $_FILES['file']['tmp_name'] as $key => $value ) {
-		$mail->addAttachment($value, $_FILES['file']['name'][$key]);
-	}
-}
-$mail->send();
+$mail->send(); 
+ 
 ?>

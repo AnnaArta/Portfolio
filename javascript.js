@@ -14,7 +14,7 @@
     let popup__request = document.getElementsByClassName("popup__request")[0];
     let answerbtn = document.getElementsByClassName("header__call-answer")[0];
     let burger = document.getElementsByClassName('header-burger')[0];
-    let menu = document.getElementsByClassName('nav__menu')[0];
+    let menu = document.getElementsByClassName('nav')[0];
     let closebtn = document.getElementsByClassName('header-close')[0];
 
 

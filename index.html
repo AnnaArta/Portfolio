@@ -21,8 +21,8 @@
 	    <div class="container flex">
 			<button class="header-burger"></button>
 			<nav class="nav">
-				<ul class="nav__menu">
-					<button class="header-close"></button>
+				<button class="header-close"></button>
+				<ul class="nav__menu">   
 					<li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
 				    <li class="nav__item"><a class="nav__link" href="#portfolio">Портфолио</a></li>
 				    <li class="nav__item"><a class="nav__link" href="#content-price">Стоимость</a></li>
@@ -44,7 +44,7 @@
 				<div class="about-me__block">
 					<h1 class="about-me__head">Дмитрий Алексеев</h1>
 					<p class="about-me__clause">Frontend-разработчик и веб-верстальщик</p>
-					<a class="about-me__button" href="#">Узнать больше</a>
+					<a class="about-me__button" href="#services">Узнать больше</a>
 				</div>
 				<div class="about-me__man">
 					<picture class="about-me__img">
@@ -114,19 +114,21 @@
 								<picture class="my-works__img">
 									<source media="(max-width: 576px)" srcset="img/rectangle-mob.png">
 										<img src="img/rectangle.png" alt="img/rectangle.png">
-										<p class="my-works__text">Сайт психолога Веры Антоновой</p>
-								</picture>		
+								</picture>
+								<p class="my-works__text">Сайт психолога Веры Антоновой</p>
 						    </div>
 						    <div class="swiper-slide card">
 							    <picture class="my-works__img">
 									<source media="(max-width: 576px)" srcset="img/child-mob.png">
-										<img src="img/child.png" alt="img/child.png"></picture>
-										<p class="my-works__text">Сайт магазина детской одежды</p>
+										<img src="img/child.png" alt="img/child.png">
+								</picture>
+								<p class="my-works__text">Сайт магазина детской одежды</p>
 					        </div>
 					        <div class="swiper-slide card">
 							    <picture class="my-works__img">
 									<source media="(max-width: 576px)" srcset="img/wish-mob.png">
-									<img src="img/wish.png" alt="img/wish.png"></picture>
+									<img src="img/wish.png" alt="img/wish.png">
+								</picture>
 							    <p class="my-works__text">Сайт магазина &laquo;Рыболов&raquo;</p>
 							</div>
 						</div>
@@ -138,7 +140,6 @@
 					<div class="my-works__ordering">
 						<button class="ordering">Заказать проект</button>
 					</div>	
-				</div>
 			</div>
 		</section>
 
@@ -146,6 +147,13 @@
 			<div class="container">
 			<h2 class="content__title">Адаптивная вёрстка под все устройства<br>и браузеры от 1000 рублей всего за 4 часа.*</h2>
 			<p class="content__term">Срок и стоимость могут отличаться от заявленных и рассчитываются&nbsp; индивидуально, &nbsp;&nbsp;&nbsp;в зависимости от сложности задач.</p>
+			</div>
+			<div class="content__element">
+				<div class="content__element-1">{ }</div>
+				<div class="content__element-2">&lt;div&gt;</div>
+				<div class="content__element-3">#</div>
+				<div class="content__element-4">&lt;/&gt;</div>
+				<div class="content__element-5">&lt;div&gt;</div>
 			</div>
 		</section>
 	</main>
@@ -191,7 +199,7 @@
 				<input type="hidden" name="admin_email[]" value="anna-arta00@rambler.ru">
 				<input type="hidden" name="form_subject" value="Заявка с сайта Freecome">
 				
-				<input class="form__input" type="fio" name="fio"  required placeholder="Имя">
+				<input class="form__input" type="text" name="ИМя" required placeholder="Имя">
 				<input class="form__input" type="tel" name="tel"  required  placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 				<input class="form__button" type="submit" value="Заказать звонок" data-method="POST">
 			</form>
@@ -209,7 +217,7 @@
 				<input type="hidden" name="admin_email[]" value="anna-arta00@rambler.ru">
 		        <input type="hidden" name="form_subject" value="Заявка с сайта Freecome">
 
-				<input class="form__input" type="fio" name="fio"  required placeholder="Имя">
+				<input class="form__input" type="text" name="Имя" placeholder="Имя">
 				<input class="form__input" type="tel" name="tel"  required placeholder="Телефон">
 				<input class="form__input" type="email" name="email" required placeholder="Email" pattern="\S+@[a-z]+.[a-z]+">
 				<input class="form__button" type="submit" value="Отправить заявку" data-method="POST">

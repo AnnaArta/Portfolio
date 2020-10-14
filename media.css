@@ -131,28 +131,37 @@
         padding-bottom: 64px;
     }
 
-    .content__element-1{
-        top: 16px;
-        left: -285px;
-    }
-
-    .content__element-2{
-        top: -84px;
-        left: 300px;
-    }
-    .content__element-3{
-        top: 33px;
-        left: 100px;
+    .content-element{
+        font-size: 30px;
     }
     
+    .content__element-1{
+        bottom: 387px;
+        left: 148px;
+    }
+    
+    .content__element-2{
+       display: none;
+    }
+    
+    .content__element-3{
+        font-size: 23px;
+        bottom: 23px;
+        right: 454px;
+        letter-spacing: 0.5px;
+    }
+    
+    
     .content__element-4{
-        top: -310px;
-        left: 580px;
+        bottom: 33px;
+        right: 96px;
+        font-size: 37px;
     }
-
+    
     .content__element-5{
-        top: 3px;
+         display: none;
     }
+    
 
     .footer-main{
         padding-top: 24px;
@@ -408,6 +417,10 @@
         display: none;
     }
 
+    .content__element-1{
+        display: none;
+    }
+
     .footer-nav{
         padding-top: 43px;
     }
@@ -538,6 +551,7 @@
 
     .header{
         padding: 0 10px;
+        margin-bottom: -114px;
     }
 
     .header-burger{
@@ -781,6 +795,10 @@
 }    
 
 @media(max-width: 375px){
+    .header{
+        margin-bottom: 0;
+    }
+
     .about-me{
         height: 416px;
         background-image: url("img/ellipse-mobile.svg");

@@ -490,6 +490,7 @@ li{
 /*CONTENT*/
 
 .content{
+    position: relative;
     height: 364px;
     background-image: linear-gradient( to top right, #fd8f5a, #ff2f93);
 }
@@ -518,56 +519,46 @@ li{
     margin-right: 6px;
 }
 
-.content__element{
+.content-element{
     position: absolute;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 700;
-    color: white;
+    color: #fff;
 }
 
 .content__element-1{
-    position: absolute;
-    z-index: 2;
-    top: -300px;
-    left: -174px;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(258px) translateY(60px) rotate(30deg);
+    bottom: 248px;
+    left: 130px;
+    transform: rotate(26deg);       
 }
 
 .content__element-2{
-    position: absolute;
-    z-index: 2;
-    bottom: 25px;
-    left: 770px;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(415px) translateY(-20px) rotate(20deg);
+    bottom: 53px;
+    left: 246px;
+    transform: translateY(20px) rotate(13deg);
+    font-size: 50px;
 }
 
 .content__element-3{
-    position: absolute;
-    z-index: 2;
-    bottom: 21px;
-    left: -30px;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(300px) translateY(-60px) rotate(20deg);
+    right: 408px;
+    bottom: 17px;
+    transform: rotate(20deg);
+    font-size: 38px;
 }
 
+
 .content__element-4{
-    position: absolute;
-    z-index: 2;
-    top: -315px;
-    left: 960px;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(35px) translateY(50px) rotate(-20deg);
+    bottom: 240px;
+    right: 206px;
+    transform: rotate(-26deg);
+    font-size: 40px;
 }
 
 .content__element-5{
-    position: absolute;
-    z-index: 2;
-    bottom: -40px;
-    right: -230px;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(-140px) translateY(-60px) rotate(20deg);
+    bottom: 48px;
+    right: 108px;
+    transform: rotate(-17deg);
+    font-size: 50px;
 }
 
 
@@ -798,9 +789,9 @@ li{
 }
 
  
- .scroll{
+.scroll{
     overflow: hidden
- }
+}
 
 
 .popup__shape{
@@ -919,7 +910,7 @@ li{
     cursor: pointer;
  }
 
- .success{
+.success{
     display: none;
     color: #000;
     width: 371px;

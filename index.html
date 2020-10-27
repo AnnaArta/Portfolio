@@ -197,7 +197,7 @@
 				<input type="hidden" name="admin_email[]" value="anna-arta00@rambler.ru">
 				<input type="hidden" name="form_subject" value="Заявка с сайта Freecome">
 				
-				<input class="form__input" type="text" name="ИМя" required placeholder="Имя">
+				<input class="form__input" type="text" name="Имя" required placeholder="Имя">
 				<input class="form__input" type="tel" name="tel"  required  placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 				<input class="form__button" type="submit" value="Заказать звонок" data-method="POST">
 			</form>
@@ -207,7 +207,7 @@
 	<div class="popup__order popup-bg">
 		<div class="popup__request pop-up">
 			<button class="popup__close form-btn"></button>
-			<form class="form">	
+			<form class="form" method="POST">	
 				<div class="success">
 					<span>Спасибо за заявку!<br>В ближайшее время мы с вами свяжемся.</span>
 				</div>

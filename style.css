@@ -73,12 +73,14 @@ li{
     display: none;
     background-color: #ff2f9300;
     cursor: pointer;
+    outline: none;
 }
 
 .header-close{
     display: none;
     cursor: pointer;
     background-color: #ff2f9300;
+    outline: none;
 }
 
 .nav{
@@ -153,6 +155,7 @@ li{
     margin-top: -2px;
     -webkit-transition: background-color 0.4s ease, color 0.4s ease;
     transition: background-color 0.4s ease, color 0.4s ease;
+    outline: none;
 }
 
 .header__button-call:hover{
@@ -163,6 +166,7 @@ li{
 .header__call-answer{
     display: none;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -231,6 +235,7 @@ li{
     cursor: pointer;
     -webkit-transition: background-color 0.4s ease, color 0.4s ease;
     transition: background-color 0.4s ease, color 0.4s ease;
+    outline: none;
 }
 
 .about-me__button:hover{
@@ -264,7 +269,7 @@ li{
   
 .about-me__element-3 {
     position: absolute;
-    left: -404px;
+    left: -350px;
     top: 412px;
     z-index: 10;
     transform: translateX(350px) translateY(100px) rotate(-30deg); 
@@ -357,6 +362,7 @@ li{
     letter-spacing: 0.3px;
     -webkit-transition: background-color 0.5s ease, color 0.5s ease;
     transition: background-color 0.5s ease, color 0.5s ease;
+    outline: none;
 }
 
 .button-more:hover{
@@ -404,6 +410,7 @@ li{
     border-radius: 100px;
     top: 43.7%;
     z-index: 10;
+    outline: none;
 }
 
 .swiper-button-prev{
@@ -435,6 +442,7 @@ li{
     margin: 0 16px;
     background-color: #8993ad;
     opacity: 1;
+    outline: none;
 }
 
 .swiper-pagination{
@@ -478,6 +486,7 @@ li{
     cursor: pointer;
     -webkit-transition: background-color 0.5s ease, color 0.5s ease;
     transition: background-color 0.5s ease, color 0.5s ease;
+    outline: none;
 }
 
 .ordering:hover{
@@ -630,6 +639,11 @@ li{
 .phone a{
     font-size: 25px;
     color: #000;
+    transition: color 0.3s ease;
+}
+
+.phone a:hover{
+    color: #ff2f93;
 }
 
 .address{
@@ -640,6 +654,11 @@ li{
     color: #000;
     font-size: 25px;
     line-height: 59px;
+    transition: color 0.3s ease;
+}
+
+.address a:hover{
+    color: #ff2f93 ;
 }
 
 .footer-call{
@@ -652,8 +671,9 @@ li{
     cursor: pointer;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
-    -webkit-transition: background-color 0.5s ease, color 0.5s ease;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
 } 
 
 .footer-call:hover{
@@ -784,7 +804,7 @@ li{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 10;
+    z-index: 30;
     overflow: auto;
 }
 
@@ -878,7 +898,7 @@ li{
     -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    z-index: 10;
+    z-index: 30;
     overflow: auto;
 }
 
@@ -913,7 +933,7 @@ li{
 .success{
     display: none;
     color: #000;
-    width: 371px;
+    width: 365px;
     position: absolute;
     padding-top: 85px;       
     text-align: center;
